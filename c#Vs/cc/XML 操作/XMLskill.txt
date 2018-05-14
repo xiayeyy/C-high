@@ -1,0 +1,22 @@
+﻿<skills>
+  <sk1>
+    <id>1</id>
+    <name lang="en">ranger's focus</name>
+    <damage>100</damage>
+  </sk1>
+  <sk2>
+    <id>2</id>
+    <name lang="en">volley</name>
+    <damage>200</damage>
+  </sk2>
+  <sk3>
+    <id>3</id>
+    <name lang="en">hawkshot</name>
+    <damage>300</damage>
+  </sk3>
+  <sk4>
+    <id>4</id>
+    <name lang="cn">中文</name>
+    <damage>500</damage>
+  </sk4>
+</skills>

@@ -37,5 +37,22 @@ namespace Socket_服务器端
                 clientlist.Add(client);
             }
         }
+
+        public static void BroadMessage(string message)    //广播消息
+        {
+            var notconnect = new List<Client>();
+            foreach (var clist in clientlist)
+            {
+                if (clist.Connect)
+                    clist.SendMessage(message);
+                else
+                    notconnect.Add(clist);
+            }
+
+            foreach (var remove in notconnect)
+            {
+                clientlist.Remove(remove);
+            }
+        }
     }
 }

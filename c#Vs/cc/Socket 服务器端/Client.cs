@@ -27,13 +27,27 @@ namespace Socket_服务器端
             while (true)
             {
                 if (c1.Poll(10, SelectMode.SelectRead)) //判断socket 是否断开，断开跳出线程
-                {    
+                {
+                    c1.Close();   //关闭当前连接
                     break;
                 }
                 int lengh= c1.Receive(data );
                 string message = Encoding.UTF8.GetString(data, 0, lengh);//接受到数据的时候，把数据分发到客户端
+                Program.BroadMessage(message);  //广播消息
                 Console.WriteLine("收到了消息:" + message);
             }
+        }
+
+        public void SendMessage(string message)
+        {
+
+            byte[] data = Encoding.UTF8.GetBytes (message);
+            c1.Send(data);
+        }
+
+        public bool Connect
+        {
+            get {return c1.Connected; }
         }
     }
 }

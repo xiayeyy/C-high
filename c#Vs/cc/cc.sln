@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者设计模式-猫�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket  TCP 协议服务器端", "Socket 服务器端\Socket  TCP 协议服务器端.csproj", "{D23298F6-BB06-4841-AEE3-77541510709A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML 操作", "XML 操作\XML 操作.csproj", "{5B1E368A-2E29-422D-B34F-4575E49D4BDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{D23298F6-BB06-4841-AEE3-77541510709A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D23298F6-BB06-4841-AEE3-77541510709A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D23298F6-BB06-4841-AEE3-77541510709A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1E368A-2E29-422D-B34F-4575E49D4BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1E368A-2E29-422D-B34F-4575E49D4BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1E368A-2E29-422D-B34F-4575E49D4BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1E368A-2E29-422D-B34F-4575E49D4BDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
