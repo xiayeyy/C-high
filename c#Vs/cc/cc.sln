@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket  TCP 协议服务器
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML 操作", "XML 操作\XML 操作.csproj", "{5B1E368A-2E29-422D-B34F-4575E49D4BDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "显示转换和隐式转换", "显示转换和隐式转换\显示转换和隐式转换.csproj", "{40D6156C-70E1-4107-A70F-4662A7373707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "结构体", "结构体\结构体.csproj", "{EC86ABE2-022C-4170-B330-3916C5C6279A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{5B1E368A-2E29-422D-B34F-4575E49D4BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B1E368A-2E29-422D-B34F-4575E49D4BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B1E368A-2E29-422D-B34F-4575E49D4BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D6156C-70E1-4107-A70F-4662A7373707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D6156C-70E1-4107-A70F-4662A7373707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D6156C-70E1-4107-A70F-4662A7373707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D6156C-70E1-4107-A70F-4662A7373707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC86ABE2-022C-4170-B330-3916C5C6279A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC86ABE2-022C-4170-B330-3916C5C6279A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC86ABE2-022C-4170-B330-3916C5C6279A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC86ABE2-022C-4170-B330-3916C5C6279A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
