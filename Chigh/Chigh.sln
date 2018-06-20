@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chigh", "Chigh.csproj", "{605F6B61-05BA-2432-7D4F-014C64C8EB75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chigh.Editor", "Chigh.Editor.csproj", "{C22F0188-B37D-6B94-5B9D-E80A45578A07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{605F6B61-05BA-2432-7D4F-014C64C8EB75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605F6B61-05BA-2432-7D4F-014C64C8EB75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605F6B61-05BA-2432-7D4F-014C64C8EB75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605F6B61-05BA-2432-7D4F-014C64C8EB75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C22F0188-B37D-6B94-5B9D-E80A45578A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C22F0188-B37D-6B94-5B9D-E80A45578A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C22F0188-B37D-6B94-5B9D-E80A45578A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C22F0188-B37D-6B94-5B9D-E80A45578A07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
