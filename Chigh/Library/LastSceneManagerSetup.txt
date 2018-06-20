@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/www.unity
+- path: Assets/Scene/thread.unity
   isLoaded: 1
   isActive: 1
