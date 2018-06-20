@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/String and zhengze.unity
+- path: Assets/Scene/www.unity
   isLoaded: 1
   isActive: 1
