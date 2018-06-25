@@ -1,26 +1,49 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
 using System.Threading;
 
-public class ThreadTest : MonoBehaviour {
+public class ThreadTest 
+{
+   public  Func<int, string, string> a;   //fun 是返回值类型的委托
+    public IAsyncResult ar;
+    public  bool isWait;
+    // Use this for initialization
+     public  string   ThreadStart()
+     {
+      
+         ar = a.BeginInvoke(100, "YOY", null, null);
+        isWait = true;
+        //while (ar.IsCompleted == false)
+        //{
+        //    tx1.text += " .";
+        //    Thread.Sleep(10);
+        //}
+        //tx1.text += a.EndInvoke(ar);
 
-    public Text tx1;
-	// Use this for initialization
-	void Start () {
-        Func <int ,string ,string >  a= MyThread;   //fun 是返回值类型的委托
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        //等待句柄
 
-    string  MyThread(int i,string str)
+        // bool isEnd = ar.AsyncWaitHandle.WaitOne(1000);  //表示超时时间  1000 时间内结束返回true
+        string end = a.EndInvoke(ar);
+        return end;
+    }
+
+    // Update is called once per frame
+    public void ThreadUpdate()
     {
-        tx1.text = "\n" + i + str;
-        return "MyThread is ok!!!!!!";
+        if (isWait)
+        {
+            //tx1.text += " .";
+        }
+    }
+
+   public  string MyThread(int i, string str)
+    {
+       
+        Thread.Sleep(999);
+        string  ret = "\n" + i + str;
+        isWait = false;
+        return ret;
+        
     }
 }
