@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 
-public class Kongfu : MonoBehaviour
+public class LinqTest : MonoBehaviour
 {
+    private int day = 9;
     public Text tx1;
     // Use this for initialization
     void Start()
@@ -75,8 +76,10 @@ public class Kongfu : MonoBehaviour
         int i = 123;
         foreach (var m in res5)
         {
-            tx1.text += m + "\n" + b1 + b2 + i.ToString("00000");
+            //tx1.text += m + "\n" + b1 + b2 + i.ToString("00000");
         }
+
+        this.tx1.text = string.Format("第{0}天", day);
     }
 
     bool Test(L_WuLin ww)

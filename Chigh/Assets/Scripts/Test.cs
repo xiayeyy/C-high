@@ -27,11 +27,11 @@ public class Test : MonoBehaviour
 
 	    if (!th1.ReBool())
 	    {
-	        tx1.text  += ".";
+	        //tx1.text  += ".";
 
 	    }
-        else
-	        tx1.text += "\n"+"  加载完成！！.";
+        //else
+	        //tx1.text += "\n"+"  加载完成！！.";
     }
 
     IEnumerator XiaTest()
