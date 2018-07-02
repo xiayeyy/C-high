@@ -27,7 +27,7 @@ public class FileTest : MonoBehaviour
         //File.ReadAllText(@"D:\O_O\C#high\c-high\Chigh\Assets\test.txt");
         //tx1.text += "\n" + File.ReadAllText(@"D:\O_O\C#high\c-high\Chigh\Assets\test.txt"); //读取全部为一个字符串
         string[] str = File.ReadAllLines(@"D:\O_O\C#high\c-high\Chigh\Assets\test.txt"); //按照行来读取
-
+        //File.all
         foreach (var a in str)
         {
             tx1.text += "\n" + a;
@@ -54,6 +54,12 @@ public class FileTest : MonoBehaviour
                 writeStream.Write(data, 0, data.Length);
             }
         }
+
+        readStream.Close();
+        writeStream.Close();  //一般流需要关闭
+
+        StreamReader streamReader = new StreamReader(@"D:\pc\test1.txt");   //创建文件读取流
+        tx1.text = streamReader.ReadToEnd();        //读取到文件末尾
     }
 
 

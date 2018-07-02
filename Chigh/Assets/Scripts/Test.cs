@@ -4,14 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
+
 public class Test : MonoBehaviour
 {
   //
     public Text tx1;
     public thread th1;
     private bool test=false ;
-	// Use this for initialization
-	void Start ()
+    private int num = 0;
+   
+    void Start ()
 	{
          //StartCoroutine(XiaTest());
 	   
@@ -25,23 +27,42 @@ public class Test : MonoBehaviour
 	        Debug.Log(333333333);
 	    }
 
-	    if (!th1.ReBool())
+	    if (Input.GetKeyDown (KeyCode.P))
 	    {
-	        //tx1.text  += ".";
-
+	        try
+	        {
+	            num += Convert.ToInt32(tx1.text);
+	            Debug.Log(num);
+	        }
+	        catch(Exception e)
+	        {
+	            Debug.Log(e);
+	            Debug.Log(tx1.text);
+	        }
 	    }
-        //else
-	        //tx1.text += "\n"+"  加载完成！！.";
+
+	    //if (!th1.ReBool())
+	    //{
+	    //    //tx1.text  += ".";
+
+	    //}
+     //   //else
+	    //    //tx1.text += "\n"+"  加载完成！！.";
     }
 
     IEnumerator XiaTest()
     {
-       
-
-  
       //  yield return test = true ;
         yield return new WaitForSeconds(2);
-    
     }
 
+    [InvokeOnKeyPressAttribute(KeyCode = KeyCode.P)]
+    public void ArrTest()
+    {
+        tx1.text = "!!!!!!";
+        Debug.Log("!!!!!!!!!!");
+    }
+
+
 }
+
