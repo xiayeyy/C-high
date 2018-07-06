@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-
+using UnityEditor;
 
 public class Test : MonoBehaviour
 {
@@ -12,7 +12,11 @@ public class Test : MonoBehaviour
     public thread th1;
     private bool test=false ;
     private int num = 0;
-   
+
+    public Color originC;
+    public Color newC;
+
+
     void Start ()
 	{
          //StartCoroutine(XiaTest());
@@ -41,13 +45,21 @@ public class Test : MonoBehaviour
 	        }
 	    }
 
-	    //if (!th1.ReBool())
-	    //{
-	    //    //tx1.text  += ".";
+	    if (Input.GetKeyDown(KeyCode.Space))
+	    {
+	        //myTest();
 
-	    //}
-     //   //else
-	    //    //tx1.text += "\n"+"  加载完成！！.";
+	    }
+
+
+	    ColorChange(originC, newC);
+        //if (!th1.ReBool())
+        //{
+        //    //tx1.text  += ".";
+
+        //}
+        //   //else
+        //    //tx1.text += "\n"+"  加载完成！！.";
     }
 
     IEnumerator XiaTest()
@@ -63,6 +75,18 @@ public class Test : MonoBehaviour
         Debug.Log("!!!!!!!!!!");
     }
 
+    void myTest()
+    {
+       // EditorUtility.DisplayDialog("1","2","3");
+      //  EditorUtility.OpenFilePanel("1", "2", "3");
+        EditorUtility.SaveFilePanel("1", "2", "3","5");
+    }
 
+    void ColorChange(Color originC ,Color newC )
+    {
+        this .gameObject .GetComponent <Renderer > ().material.color = Color.Lerp(originC,newC, Time.time);
+    }
+
+    
 }
 
