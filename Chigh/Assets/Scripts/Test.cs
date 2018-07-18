@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-using UnityEditor;
+
 
 public class Test : MonoBehaviour
 {
@@ -79,7 +79,6 @@ public class Test : MonoBehaviour
     {
        // EditorUtility.DisplayDialog("1","2","3");
       //  EditorUtility.OpenFilePanel("1", "2", "3");
-        EditorUtility.SaveFilePanel("1", "2", "3","5");
     }
 
     void ColorChange(Color originC ,Color newC )
